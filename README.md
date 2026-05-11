@@ -19,18 +19,18 @@ The app supports user authentication, JWT-secured API calls, and prediction hist
 
 **🛠 Tech Stack**
 **Machine Learning**
-  > Python, TensorFlow / Keras
-  > Scikit-learn (preprocessing, train/test split)
-  > NumPy, Pandas
+  1. Python, TensorFlow / Keras
+  2. Scikit-learn (preprocessing, train/test split)
+  3. NumPy, Pandas
 **Backend**
-  > FastAPI (REST API framework)
-  > SQLAlchemy (ORM)
-  > PostgreSQL (database)
-  > python-jose (JWT token generation & validation)
-  > passlib + bcrypt (password hashing)
-  > Uvicorn (ASGI server)
+  1. FastAPI (REST API framework)
+  2. SQLAlchemy (ORM)
+  3. PostgreSQL (database)
+  4. python-jose (JWT token generation & validation)
+  5. passlib + bcrypt (password hashing)
+  6.Uvicorn (ASGI server)
 **Frontend**
-  > Streamlit (interactive web UI)
+  1. Streamlit (interactive web UI)
 
 **🏗 System Architecture**
 ┌─────────────────────────────────────────────────────────────┐
