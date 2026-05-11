@@ -18,45 +18,9 @@ The app supports user authentication, JWT-secured API calls, and prediction hist
 8. Interactive UI:  Clean Streamlit frontend with session-state based routing
 
 **🛠 Tech Stack**
-**Machine Learning**
-  1. Python, TensorFlow / Keras
-  2. Scikit-learn (preprocessing, train/test split)
-  3. NumPy, Pandas
-**Backend**
-  1. FastAPI (REST API framework)
-  2. SQLAlchemy (ORM)
-  3. PostgreSQL (database)
-  4. python-jose (JWT token generation & validation)
-  5. passlib + bcrypt (password hashing)
-  6.Uvicorn (ASGI server)
-**Frontend**
-  1. Streamlit (interactive web UI)
-
-**🏗 System Architecture**
-┌─────────────────────────────────────────────────────────────┐
-│                     User (Browser)                          │
-│                   Streamlit Frontend                        │
-│    [Login/Register] ──► [Symptom Selection] ──► [Results]   │
-└──────────────────────┬──────────────────────────────────────┘
-                       │ HTTP requests (JSON + JWT)
-                       ▼
-┌─────────────────────────────────────────────────────────────┐
-│                   FastAPI Backend                           │
-│  /register  /login  /predict  /save-prediction  /history    │
-└──────┬────────────────────────────────────┬─────────────────┘
-       │                                    │
-       ▼                                    ▼
-┌─────────────────┐               ┌─────────────────────────┐
-│  ML Model Layer │               │  PostgreSQL Database    │
-│  disease_model  │               │  Users + Predictions    │
-│  .h5 (Keras)    │               │  Tables                 │
-└────────┬────────┘               └─────────────────────────┘
-         │
-         ▼
-┌─────────────────────────────────────────────────────────────┐
-│              disease_info_final.json                        │
-│  791 diseases → medicines, prescriptions, do's & don'ts     │
-└─────────────────────────────────────────────────────────────┘
+1.Machine Learning:  Python, TensorFlow / Keras, Scikit-learn (preprocessing, train/test split), NumPy, Pandas 
+2.Backend: FastAPI (REST API framework), SQLAlchemy (ORM), PostgreSQL (database), python-jose (JWT token generation &        validation), passlib + bcrypt (password hashing), passlib + bcrypt (password hashing), Uvicorn (ASGI server)   
+3.Frontend:  Streamlit (interactive web UI)
 
 **🔄 Workflow — How It All Works**
 1. REGISTER / LOGIN
