@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+tensorflow
+keras
+numpy
+pandas
+scikit-learn
+joblib
+python-jose
+passlib
+bcrypt
+python-multipart
+psycopg2-binary
+sqlalchemy
+pydantic
+pydantic[email]
